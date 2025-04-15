@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Kripto Menarik (Modul 6)</title>
+
+    <!-- Internal CSS (Import Font & Page Specific Styles) -->
+    <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        /* Gaya dasar body (lebih menarik) */
+        body {
+            font-family: 'Poppins', sans-serif; /* Font Poppins yang lebih modern */
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa; /* Latar belakang abu-abu sangat muda */
+            color: #495057; /* Warna teks abu-abu gelap */
+            line-height: 1.6; /* Jarak baris lebih nyaman */
+        }
+
+        /* Gaya H1 utama halaman */
+        h1 {
+            color: #343a40; /* Warna judul utama lebih gelap */
+            margin-bottom: 30px;
+            font-weight: 700; /* Bold */
+        }
+
+        /* Penengah untuk tabel (memastikan bekerja dengan inline-block) */
+        body > center {
+            text-align: center;
+        }
+    </style>
+
+    <!-- Link ke External CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <center>
+        <h1>INFORMASI CRYPTOCURRENCY</h1>
+    </center>
+
+    <!-- Judul bagian (ID #judul dari CSS) -->
+    <p id="judul">Daftar Kripto Populer</p>
+
+    <center>
+        <!-- Tabel untuk Bitcoin -->
+        <table style="margin-left:auto; margin-right:auto" border="0" cellpadding="15"> <!-- border=0 (diatur CSS), padding ditambah -->
+            <tr style="background-color: #008080;"> <!-- Warna header Teal gelap -->
+                <td><p id="jdl">Logo</p></td>
+                <td><p id="jdl">Profil Kripto</p></td>
+            </tr>
+            <tr>
+                <td class="logo-cell">
+                    <img src="images/bitcoin.png" alt="Logo Bitcoin" style="width: 90px; height: 90px;"> <!-- Ukuran sedikit disesuaikan -->
+                </td>
+                <td class="info-cell">
+                    <p id="member">Nama: </p><p id="mnama">Bitcoin (BTC)</p><br>
+                    <p id="member">Jenis: </p><p id="mposisi">Mata Uang Digital</p><br>
+                    <p id="member">Deskripsi: </p><p id="mtgl">Sebagai 'emas digital', Bitcoin adalah kripto pertama yang memperkenalkan teknologi blockchain ke dunia.</p><br>
+                    <p id="member">Kategori: </p><p id="msub">Proof-of-Work (PoW)</p>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Tabel untuk Ethereum -->
+        <table style="margin-left:auto; margin-right:auto" border="0" cellpadding="15">
+             <tr style="background-color: #008080;">
+                <td><p id="jdl">Logo</p></td>
+                <td><p id="jdl">Profil Kripto</p></td>
+            </tr>
+            <tr>
+                <td class="logo-cell">
+                     <img src="images/ethereum.png" alt="Logo Ethereum" style="width: 90px; height: 90px;">
+                </td>
+                <td class="info-cell">
+                    <p id="member">Nama: </p><p id="mnama">Ethereum (ETH)</p><br>
+                    <p id="member">Jenis: </p><p id="mposisi">Platform Smart Contract</p><br>
+                    <p id="member">Deskripsi: </p><p id="mtgl">Memungkinkan pengembang membangun aplikasi terdesentralisasi (dApps) dan menjadi fondasi DeFi & NFT.</p><br>
+                    <p id="member">Kategori: </p><p id="msub">Proof-of-Stake (PoS)</p>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Tabel untuk Solana -->
+        <table style="margin-left:auto; margin-right:auto" border="0" cellpadding="15">
+             <tr style="background-color: #008080;">
+                <td><p id="jdl">Logo</p></td>
+                <td><p id="jdl">Profil Kripto</p></td>
+            </tr>
+            <tr>
+                <td class="logo-cell">
+                    <img src="images/solana.png" alt="Logo Solana" style="width: 90px; height: 90px;">
+                </td>
+                 <td class="info-cell">
+                    <p id="member">Nama: </p><p id="mnama">Solana (SOL)</p><br>
+                    <p id="member">Jenis: </p><p id="mposisi">Blockchain Cepat</p><br>
+                    <p id="member">Deskripsi: </p><p id="mtgl">Dikenal karena kecepatan transaksi yang sangat tinggi dan biaya rendah, cocok untuk aplikasi skala besar.</p><br>
+                    <p id="member">Kategori: </p><p id="msub">Proof-of-History (PoH) / PoS</p>
+                </td>
+            </tr>
+        </table>
+
+         <!-- Tabel untuk XRP -->
+        <table style="margin-left:auto; margin-right:auto" border="0" cellpadding="15">
+             <tr style="background-color: #008080;">
+                <td><p id="jdl">Logo</p></td>
+                <td><p id="jdl">Profil Kripto</p></td>
+            </tr>
+            <tr>
+                <td class="logo-cell">
+                     <img src="images/xrp.png" alt="Logo XRP" style="width: 90px; height: 90px;">
+                </td>
+                 <td class="info-cell">
+                    <p id="member">Nama: </p><p id="mnama">XRP</p><br>
+                    <p id="member">Jenis: </p><p id="mposisi">Pembayaran Lintas Batas</p><br>
+                    <p id="member">Deskripsi: </p><p id="mtgl">Dirancang oleh Ripple Labs untuk memfasilitasi transfer uang internasional yang cepat dan murah bagi institusi keuangan.</p><br>
+                    <p id="member">Kategori: </p><p id="msub">Consensus Ledger (RPCA)</p>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Tabel untuk BNB -->
+        <table style="margin-left:auto; margin-right:auto" border="0" cellpadding="15">
+             <tr style="background-color: #008080;">
+                <td><p id="jdl">Logo</p></td>
+                <td><p id="jdl">Profil Kripto</p></td>
+            </tr>
+            <tr>
+                <td class="logo-cell">
+                    <!-- Ganti "images/bnb_placeholder.png" dengan lokasi gambar Anda -->
+                    <img src="images/bnb.png" alt="Logo BNB" style="width: 90px; height: 90px;">
+                </td>
+                 <td class="info-cell">
+                    <p id="member">Nama: </p><p id="mnama">BNB (BNB)</p><br>
+                    <p id="member">Jenis: </p><p id="mposisi">Token Ekosistem Binance</p><br>
+                    <p id="member">Deskripsi: </p><p id="mtgl">Token utilitas utama dari Binance Exchange dan BNB Chain, digunakan untuk biaya transaksi, staking, dan lainnya.</p><br>
+                    <p id="member">Kategori: </p><p id="msub">Exchange Token / Layer 1</p>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Tabel untuk Tron (TRX) -->
+        <table style="margin-left:auto; margin-right:auto" border="0" cellpadding="15">
+             <tr style="background-color: #008080;">
+                <td><p id="jdl">Logo</p></td>
+                <td><p id="jdl">Profil Kripto</p></td>
+            </tr>
+            <tr>
+                <td class="logo-cell">
+                     <!-- Ganti "images/trx_placeholder.png" dengan lokasi gambar Anda -->
+                    <img src="images/trx.png" alt="Logo Tron" style="width: 90px; height: 90px;">
+                </td>
+                 <td class="info-cell">
+                    <p id="member">Nama: </p><p id="mnama">Tron (TRX)</p><br>
+                    <p id="member">Jenis: </p><p id="mposisi">Platform Konten & Hiburan</p><br>
+                    <p id="member">Deskripsi: </p><p id="mtgl">Bertujuan membangun web terdesentralisasi dengan fokus pada berbagi konten digital dan aplikasi hiburan.</p><br>
+                    <p id="member">Kategori: </p><p id="msub">Content Platform / Layer 1</p>
+                </td>
+            </tr>
+        </table>
+
+    </center>
+</body>
+</html>

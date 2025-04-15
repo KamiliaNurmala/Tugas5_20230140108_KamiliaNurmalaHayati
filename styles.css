@@ -1,0 +1,117 @@
+/* External CSS - styles.css */
+/* Enhanced styles based on PDF structure but more attractive */
+
+/* #judul: Judul Bagian */
+#judul {
+    font-family: 'Poppins', sans-serif; /* Font konsisten */
+    font-weight: 700; /* Bold */
+    color: #FFFFFF; /* Teks Putih */
+    text-align: center;
+    margin: 20px auto; /* Margin atas/bawah, auto kiri/kanan */
+    padding: 12px 20px; /* Padding internal */
+    font-size: 16pt; /* Sedikit lebih kecil dari 20pt */
+    background-color: #008080; /* Teal Gelap (konsisten dengan header tabel) */
+    border-radius: 8px; /* Sudut sedikit bulat */
+    max-width: 500px; /* Batasi lebar judul */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+/* table: Wadah utama setiap kripto */
+table {
+    display: inline-block; /* Sesuai PDF */
+    vertical-align: top; /* Jaga alignment */
+    margin-bottom: 30px; /* Jarak antar tabel lebih besar */
+    margin-left: 10px; /* Jarak horizontal kecil */
+    margin-right: 10px;
+    border-collapse: separate; /* Pisahkan border untuk radius */
+    border-spacing: 0; /* Hilangkan spasi antar sel */
+    width: calc(50% - 40px); /* Coba buat 2 kolom jika layar lebar, kurangi gap */
+    min-width: 350px; /* Lebar minimum */
+    background-color: #ffffff; /* Latar belakang kartu putih */
+    border-radius: 12px; /* Sudut lebih bulat untuk kartu */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Bayangan halus untuk kartu */
+    overflow: hidden; /* Agar radius memotong header */
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out; /* Transisi halus */
+}
+
+table:hover {
+    transform: translateY(-5px); /* Efek angkat saat hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* Bayangan lebih jelas saat hover */
+}
+
+/* td: Sel dalam tabel */
+td {
+    padding: 15px; /* Padding internal sel dari HTML cellpadding */
+    vertical-align: middle; /* Tengah secara vertikal */
+}
+
+/* Class untuk sel logo (kiri) */
+td.logo-cell {
+    width: 100px; /* Lebar tetap untuk kolom logo */
+    text-align: center;
+}
+
+/* Class untuk sel info (kanan) */
+td.info-cell {
+    text-align: left;
+}
+
+
+/* #jdl: Header kolom dalam tabel (Logo, Profil Kripto) */
+#jdl {
+    color: #FFFFFF; /* Teks Putih (karena background header gelap) */
+    text-align: center;
+    font-weight: 700; /* Bold */
+    font-size: 1.1em; /* Sedikit perbesar */
+    margin: 0; /* Reset margin p */
+    padding: 0; /* Reset padding p */
+}
+
+/* #member: Label (Nama:, Jenis:, Deskripsi:, Kategori:) */
+#member {
+    width: 90px; /* Lebar tetap (sesuaikan jika perlu) */
+    display: inline-block; /* Sesuai PDF */
+    font-weight: 700; /* Bold */
+    color: #6c757d; /* Warna abu-abu untuk label */
+    vertical-align: top;
+    margin: 0; /* Reset margin p */
+    padding: 0;
+    margin-bottom: 5px; /* Jarak bawah antar baris info */
+}
+
+/* #mnama, #mposisi, #mtgl, #msub: Value */
+#mnama,
+#mposisi,
+#mtgl,
+#msub {
+    font-family: 'Poppins', sans-serif; /* Font konsisten */
+    letter-spacing: 0.5px; /* Sedikit kurangi letter-spacing */
+    text-transform: none; /* Hapus uppercase kecuali dibutuhkan */
+    display: inline-block;
+    cursor: default; /* Kursor standar, pointer tidak perlu */
+    vertical-align: top;
+    margin: 0; /* Reset margin p */
+    padding: 0;
+    margin-bottom: 5px; /* Jarak bawah antar baris info */
+    color: #343a40; /* Warna teks value lebih gelap */
+    /* Lebar value agar bisa wrap jika perlu */
+    width: calc(100% - 100px); /* Lebar sisa dikurangi lebar #member */
+}
+
+/* Spesifik untuk Nama (jika ingin uppercase) */
+#mnama {
+    text-transform: uppercase;
+    font-weight: 700; /* Nama bold */
+    color: #007bff; /* Warna biru untuk nama */
+}
+/* Spesifik untuk Posisi/Jenis (jika ingin uppercase) */
+#mposisi {
+     text-transform: uppercase;
+     font-size: 0.9em;
+}
+/* Spesifik untuk Kategori (jika ingin uppercase) */
+#msub {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: #6c757d; /* Abu-abu untuk kategori */
+}
